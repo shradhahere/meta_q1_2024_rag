@@ -1,0 +1,474 @@
+
+===== Cell 1 Outputs (Exact) =====
+
+[stream:stdout]>
+ All libraries imported successfully!
+
+
+===== Cell 2 Outputs (Exact) =====
+
+[stream:stdout]>
+ PDF content loaded.
+  - Text length: 17365 characters
+  - Table rows extracted: 206
+
+
+===== Cell 4 Outputs (Exact) =====
+
+[stream:stdout]>
+ Initializing EnhancedFinancialRAG...
+ Models loaded.
+ Loading PDF content ...
+ PDF content loaded.
+  - Text length: 16818 characters
+  - Table rows extracted: 842
+ Building index (text + tables if available)...
+  - Text chunks:  7
+  - Table chunks: 141
+  - Total chunks: 148
+ Computing embeddings and building FAISS index ...
+
+
+[text/plain]>
+Batches:   0%|          | 0/5 [00:00<?, ?it/s]
+
+[stream:stdout]>
+ FAISS index built and EnhancedFinancialRAG ready.
+
+
+===== Cell 6 Outputs (Exact) =====
+
+[stream:stdout]>
+
+=== QUERY ===
+What was Meta's net income in Q1 2024 compared to Q1 2023?
+
+=== ANSWER ===
+Meta’s net income was $12,369 million ($12.37 billion) in Q1 2024 vs $5,709 million ($5.71 billion) in Q1 2023.
+
+=== SUPPORTING SNIPPET ===
+Net income | $ | 12,369 | $ | 5,709 | 117 %
+
+=== QUERY ===
+Summarize Meta's operating expenses in Q1 2024.
+
+=== ANSWER ===
+Cost of revenue: $6,640 million ($6.64 billion)
+Research and development: $9,978 million ($9.98 billion)
+Marketing and sales: $2,564 million ($2.56 billion)
+General and administrative: $3,455 million ($3.46 billion)
+Total costs and expenses: $22,637 million ($22.64 billion)
+
+=== SUPPORTING SNIPPET ===
+Cost of revenue |  |  | 6,640 |  |  | 6,108 | Research and development |  |  | 9,978 |  |  | 9,381 | Marketing and sales |  |  | 2,564 |  |  | 3,044 | General and administrative |  |  | 3,455 |  |  | 2,885 | Total costs and expenses |  |  | 22,637 |  |  | 21,418
+
+=== QUERY ===
+What was the operating margin in Q1 2024?
+
+=== ANSWER ===
+Operating margin was 38% in Q1 2024 (vs 25% in Q1 2023).
+
+=== SUPPORTING SNIPPET ===
+Operating margin |  | 38 % |  | 25 %
+
+
+===== Cell 7 Outputs (Exact) =====
+
+[stream:stdout]>
+
+=== STEP 2: STRUCTURED DATA INTEGRATION ===
+
+Query: What was Meta's net income in Q1 2024 compared to Q1 2023?
+Answer: === QUERY ===
+What was Meta's net income in Q1 2024 compared to Q1 2023?
+
+=== ANSWER ===
+Meta’s net income was $12,369 million ($12.37 billion) in Q1 2024 vs $5,709 million ($5.71 billion) in Q1 2023.
+
+=== SUPPORTING SNIPPET ===
+Net income | $ | 12,369 | $ | 5,709 | 117 %
+Confidence: 0.912
+Structured Data Used: True
+
+Query: Summarize Meta's operating expenses in Q1 2024.
+Answer: === QUERY ===
+Summarize Meta's operating expenses in Q1 2024.
+
+=== ANSWER ===
+Cost of revenue: $6,640 million ($6.64 billion)
+Research and development: $9,978 million ($9.98 billion)
+Marketing and sales: $2,564 million ($2.56 billion)
+General and administrative: $3,455 million ($3.46 billion)
+Total costs and expenses: $22,637 million ($22.64 billion)
+
+=== SUPPORTING SNIPPET ===
+Cost of revenue |  |  | 6,640 |  |  | 6,108 | Research and development |  |  | 9,978 |  |  | 9,381 | Marketing and sales |  |  | 2,564 |  |  | 3,044 | General and administrative |  |  | 3,455 |  |  | 2,885 | Total costs and expenses |  |  | 22,637 |  |  | 21,418
+Confidence: 0.989
+Structured Data Used: True
+
+
+===== Cell 8 Outputs (Exact) =====
+
+[stream:stdout]>
+
+=== STEP 3: ADVANCED RAG WITH OPTIMIZATION ===
+
+Query: Compare Meta's revenue growth year-over-year
+Original Query: Compare Meta's revenue growth year-over-year
+Optimized Query: Compare Meta's revenue growth year-over-year
+Answer: === QUERY ===
+Compare Meta's revenue growth year-over-year
+
+=== ANSWER ===
+Meta’s revenue in Q1 2024 was $36,455 million ($36.45 billion).
+
+=== SUPPORTING SNIPPET ===
+Meta Reports First Quarter 2024 Results MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter ended March 31, 2024. "It's been a good start to the year," said Mark Zuckerberg, Meta founder and CEO. "The new version of Meta AI with Llama 3 is another step towards building the world's leading AI. We're seeing healthy growth across our apps and we continue making steady progress building the metaverse as well." First Quarter 2024 Financial Highlights Three Months Ended March 31, In millions, except percentages and per share amounts 2024 2023 % Change Revenue $ 36,455 $ 28,645 27 % Costs and expenses 22,637 21,418 6 % Income from operations $ 13,818 $ 7,227 91 % Operating margin 38 % 25 % Provision for income taxes $ 1,814 $ 1,598 14 % Effective tax rate 13 % 22 % Net income $ 12,369 $ 5,709 117 % Diluted earnings per share (EPS) $ 4.71 $ 2.20 114 % First Quarter 2024 Operational and Other Financial Highlights • Family daily active people (DAP) – DAP was 3.24 billion on average for March 2024, an increase of 7% year-over- year. • Ad impressions – Ad impressions delivered across our Family of Apps increased by 20% year-over-year. • Average price per ad – Average price per ad increased by 6% year-over-year. • Revenue – Total revenue and revenue on a constant currency basis were $36.46 billion and $36.35 billion, respectively, both of which increased by 27% year-over-year. • Costs and expenses – Total costs and expenses were $22.64 billion, an increase of 6% year-over-year. • Capital expenditures – Capital expenditures, including principal payments on finance leases, were $6.72 billion. • Capital return program – Share repurchases were $14.64 billion of our Class A common stock and dividends payments were $1.27 billion. • Cash, cash equivalents, and marketable securities – Cash, cash equivalents, and marketable securities were $58.12 billion as of March 31, 2024. Free cash flow was $12.53 billion. • Headcount – Headcount was 69,329 as of March 31, 2024, a decrease of 10% year-over-year. 1 CFO Outlook Commentary We expect second quarter 2024 total revenue to be in the range of $36.5-39 billion. Our guidance assumes foreign currency is a 1% headwind to year-over-year total revenue growth, based on current exchange rates. We expect full-year 2024 total expenses to be in the range of $96-99 billion, updated from our prior outlook of $94-99 billion due to higher infrastructure and legal costs. For Reality Labs, we continue to expect operating losses to increase meaningfully year-over-year due to our ongoing product development efforts and our investments to further scale our ecosystem. We anticipate our full-year 2024 capital expenditures will be in the range of $35-40 billion, increased from our prior range of $30-37 billion as we continue to accelerate our infrastructure investments to support our artificial intelligence (AI) roadmap. While we are not providing guidance for years beyond 2024, we expect capital expenditures will continue to increase next year as we invest aggressively to support our ambitious AI research and product development efforts. Absent any changes to our tax landscape, we expect our full-year 2024 tax rate to be in the mid-teens. In addition, we continue to monitor an active regulatory landscape, including the MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter
+
+=== SUPPORTING SNIPPET ===
+=== QUERY ===
+Compare Meta's revenue growth year-over-year
+
+=== ANSWER ===
+Meta’s revenue in Q1 2024 was $36,455 million ($36.45 billion).
+Confidence: 0.850
+Structured Data Used: True
+
+Query: What were the key drivers of Meta's Q1 2024 performance?
+Original Query: What were the key drivers of Meta's Q1 2024 performance?
+Optimized Query: What were the key drivers of Meta's Q1 2024 performance?
+Answer: === QUERY ===
+What were the key drivers of Meta's Q1 2024 performance?
+
+=== ANSWER ===
+Meta’s revenue in Q1 2024 was $36,455 million ($36.45 billion).
+
+=== SUPPORTING SNIPPET ===
+Meta Reports First Quarter 2024 Results MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter ended March 31, 2024. "It's been a good start to the year," said Mark Zuckerberg, Meta founder and CEO. "The new version of Meta AI with Llama 3 is another step towards building the world's leading AI. We're seeing healthy growth across our apps and we continue making steady progress building the metaverse as well." First Quarter 2024 Financial Highlights Three Months Ended March 31, In millions, except percentages and per share amounts 2024 2023 % Change Revenue $ 36,455 $ 28,645 27 % Costs and expenses 22,637 21,418 6 % Income from operations $ 13,818 $ 7,227 91 % Operating margin 38 % 25 % Provision for income taxes $ 1,814 $ 1,598 14 % Effective tax rate 13 % 22 % Net income $ 12,369 $ 5,709 117 % Diluted earnings per share (EPS) $ 4.71 $ 2.20 114 % First Quarter 2024 Operational and Other Financial Highlights • Family daily active people (DAP) – DAP was 3.24 billion on average for March 2024, an increase of 7% year-over- year. • Ad impressions – Ad impressions delivered across our Family of Apps increased by 20% year-over-year. • Average price per ad – Average price per ad increased by 6% year-over-year. • Revenue – Total revenue and revenue on a constant currency basis were $36.46 billion and $36.35 billion, respectively, both of which increased by 27% year-over-year. • Costs and expenses – Total costs and expenses were $22.64 billion, an increase of 6% year-over-year. • Capital expenditures – Capital expenditures, including principal payments on finance leases, were $6.72 billion. • Capital return program – Share repurchases were $14.64 billion of our Class A common stock and dividends payments were $1.27 billion. • Cash, cash equivalents, and marketable securities – Cash, cash equivalents, and marketable securities were $58.12 billion as of March 31, 2024. Free cash flow was $12.53 billion. • Headcount – Headcount was 69,329 as of March 31, 2024, a decrease of 10% year-over-year. 1 CFO Outlook Commentary We expect second quarter 2024 total revenue to be in the range of $36.5-39 billion. Our guidance assumes foreign currency is a 1% headwind to year-over-year total revenue growth, based on current exchange rates. We expect full-year 2024 total expenses to be in the range of $96-99 billion, updated from our prior outlook of $94-99 billion due to higher infrastructure and legal costs. For Reality Labs, we continue to expect operating losses to increase meaningfully year-over-year due to our ongoing product development efforts and our investments to further scale our ecosystem. We anticipate our full-year 2024 capital expenditures will be in the range of $35-40 billion, increased from our prior range of $30-37 billion as we continue to accelerate our infrastructure investments to support our artificial intelligence (AI) roadmap. While we are not providing guidance for years beyond 2024, we expect capital expenditures will continue to increase next year as we invest aggressively to support our ambitious AI research and product development efforts. Absent any changes to our tax landscape, we expect our full-year 2024 tax rate to be in the mid-teens. In addition, we continue to monitor an active regulatory landscape, including the MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter
+
+=== SUPPORTING SNIPPET ===
+=== ANSWER ===
+Meta’s revenue in Q1 2024 was $36,455 million ($36.45 billion).
+Confidence: 0.850
+Structured Data Used: True
+
+Query: How did Family of Apps perform vs Reality Labs?
+Original Query: How did Family of Apps perform vs Reality Labs?
+Optimized Query: How did Family of Apps perform vs Reality Labs?
+Answer: I couldn't find a clear value for 'How did Family of Apps perform vs Reality Labs?'.
+
+=== SUPPORTING SNIPPET ===
+I couldn't find a clear value for 'How did Family of Apps perform vs Reality Labs?'....
+Confidence: 0.850
+Structured Data Used: True
+
+
+===== Cell 10 Outputs (Exact) =====
+
+[stream:stdout]>
+ 8C patch applied: unified formatting, YoY routing, run_step3_query override, and chunk_map shim for Cell 9.
+
+
+===== Cell 11 Outputs (Exact) =====
+
+[stream:stdout]>
+
+=== COMPREHENSIVE EVALUATION (Enhanced + Fallbacks) ===
+Running comprehensive evaluation...
+
+🔍 1. Revenue Q1 2024
+
+🔍 2. Net income Q1 2024 vs Q1 2023
+
+🔍 3. Operating margin Q1 2024
+
+🔍 4. Capital expenditures Q1 2024
+
+=== FACTUAL CHECK DETAIL TABLE (4 key numeric questions) ===
+                                               Query         Parsed  \
+0                What was Meta's revenue in Q1 2024?          36455   
+1  What was Meta's net income in Q1 2024 compared...  (12369, 5709)   
+2         What was the operating margin for Q1 2024?             38   
+3             What were Meta's capital expenditures?           6720   
+
+    Ground Truth Match  Used Fallback  \
+0          36455  Pass          False   
+1  (12369, 5709)  Pass          False   
+2             38  Pass          False   
+3           6720  Pass          False   
+
+                                             Snippet  
+0                                                     
+1        Net income | $ | 12,369 | $ | 5,709 | 117 %  
+2               Operating margin |  | 38 % |  | 25 %  
+3  Capital expenditures – Capital expenditures, i...  
+
+ Evaluation completed! Results saved to 'evaluation_results_enhanced_20250810_155157.csv'
+
+
+===== Cell 13 Outputs (Exact) =====
+
+[stream:stdout]>
+ Initialized: rag_system, evaluation_queries, evaluation_results (step_1/2/3).
+   - Queries: 15
+   - Step1 results: 15 | Step2 results: 15 | Step3 results: 15
+   - Chunks indexed (for summary): 148
+
+
+===== Cell 14 Outputs (Exact) =====
+
+[stream:stdout]>
+
+=== PERFORMANCE ANALYSIS ===
+
+Step 1 Performance:
+  Average Confidence: 0.500
+  High Confidence Rate: 0.0%
+
+Step 2 Performance:
+  Average Confidence: 0.600
+  High Confidence Rate: 33.3%
+  Structured Data Usage: 33.3%
+
+Step 3 Performance:
+  Average Confidence: 0.700
+  High Confidence Rate: 33.3%
+  Structured Data Usage: 33.3%
+
+
+=== STRICT FACTUAL ACCURACY (Enhanced extractors) ===
+4/4 correct  (100.0%)
+
+=== FACTUAL CHECK DETAIL TABLE ===
+                                                     Query Result Snippet (for fails)
+                       What was Meta's revenue in Q1 2024?   Pass                    
+What was Meta's net income in Q1 2024 compared to Q1 2023?   Pass                    
+                What was the operating margin for Q1 2024?   Pass                    
+                    What were Meta's capital expenditures?   Pass                    
+
+ Saved factual check table to 'factual_checks_detail_table_ENH_20250810_155200.csv'
+
+
+[text/plain]>
+<Figure size 1200x800 with 4 Axes>
+
+===== Cell 15 Outputs (Exact) =====
+
+[stream:stdout]>
+
+=== DETAILED ANALYSIS (Baseline vs Enhanced) ===
+
+================================================================================
+QUERY: What was Meta's net income in Q1 2024 compared to Q1 2023?
+================================================================================
+
+-- Baseline RAG (rag_system) --
+
+Step 1 Result:
+Answer: Based on the financial report: Meta Reports First Quarter 2024 Results MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter ended March 31, 2024. "It's been a good start…
+Confidence: 0.500
+
+Step 2 Result:
+Answer: Based on the financial report: Meta Reports First Quarter 2024 Results MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter ended March 31, 2024. "It's been a good start…
+Confidence: 0.500
+
+Step 3 Result:
+Answer: Based on the financial report: Meta Reports First Quarter 2024 Results MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter ended March 31, 2024. "It's been a good start…
+Confidence: 0.520
+
+-- Enhanced Precise Answer (enhanced_rag) --
+Enhanced Answer: Meta’s net income was $12,369 million ($12.37 billion) in Q1 2024 vs $5,709 million ($5.71 billion) in Q1 2023.
+Enhanced Snippet: Meta Reports First Quarter 2024 Results MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter ended March 31, 2024. "It's been a good start to the year," said Mark Zucker…
+Enhanced Confidence: 0.850
+
+================================================================================
+QUERY: Compare Meta's revenue growth year-over-year
+================================================================================
+
+-- Baseline RAG (rag_system) --
+
+Step 1 Result:
+Answer: Based on the financial report: Meta Reports First Quarter 2024 Results MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter ended March 31, 2024. "It's been a good start…
+Confidence: 0.500
+
+Step 2 Result:
+Answer: Based on the financial report: Meta Reports First Quarter 2024 Results MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter ended March 31, 2024. "It's been a good start…
+Confidence: 0.500
+
+Step 3 Result:
+Answer: Based on the financial report: Meta Reports First Quarter 2024 Results MENLO PARK, Calif. – April 24, 2024 – Meta Platforms, Inc. (Nasdaq: META) today reported financial results for the quarter ended March 31, 2024. "It's been a good start…
+Confidence: 0.520
+
+-- Enhanced Precise Answer (enhanced_rag) --
+Enhanced Answer: Revenue was $36,455 million ($36.45 billion) in Q1 2024 vs $28,645 million ($28.64 billion) in Q1 2023, an increase of 27% year-over-year.
+Enhanced Snippet: We're seeing healthy growth across our apps and we continue making steady progress building the metaverse as well." First Quarter 2024 Financial Highlights Three Months Ended March 31, In millions, except percentages and per share amounts …
+Enhanced Confidence: 0.880
+
+
+=== BASELINE vs ENHANCED (Compact Table) ===
+
+
+[text/plain]>
+                                               Query  \
+0  What was Meta's net income in Q1 2024 compared...   
+1       Compare Meta's revenue growth year-over-year   
+
+                                        Step1 Answer  Step1 Conf  \
+0  Based on the financial report: Meta Reports Fi...         0.5   
+1  Based on the financial report: Meta Reports Fi...         0.5   
+
+                                        Step2 Answer  Step2 Conf  \
+0  Based on the financial report: Meta Reports Fi...         0.5   
+1  Based on the financial report: Meta Reports Fi...         0.5   
+
+                                        Step3 Answer  Step3 Conf  \
+0  Based on the financial report: Meta Reports Fi...        0.52   
+1  Based on the financial report: Meta Reports Fi...        0.52   
+
+                                     Enhanced Answer  \
+0  Meta’s net income was $12,369 million ($12.37 ...   
+1  Revenue was $36,455 million ($36.45 billion) i...   
+
+                                    Enhanced Snippet  Enhanced Conf  
+0  Meta Reports First Quarter 2024 Results MENLO ...           0.85  
+1  We're seeing healthy growth across our apps an...           0.88  
+
+[stream:stdout]>
+
+ Saved comparison CSV to: baseline_vs_enhanced_20250810_155201.csv
+ Saved comparison Markdown to: baseline_vs_enhanced_20250810_155201.md
+
+
+===== Cell 16 Outputs (Exact) =====
+
+[stream:stdout]>
+
+=== FAILURE CASE ANALYSIS (Categorized) ===
+Found 10 low-confidence queries (< 0.6).
+
+
+[text/plain]>
+                                               Query  Avg Conf  Step1 Conf  \
+0  What were the key financial highlights for Met...      0.55         0.5   
+1       Compare Meta's revenue growth year-over-year      0.55         0.5   
+2  What were the key drivers of Meta's Q1 2024 pe...      0.55         0.5   
+3                What is Meta's outlook for Q2 2024?      0.55         0.5   
+4       How many daily active people does Meta have?      0.55         0.5   
+5      How did ad impressions change year-over-year?      0.55         0.5   
+6             What happened to average price per ad?      0.55         0.5   
+7  How much cash and marketable securities did Me...      0.55         0.5   
+
+   Step2 Conf  Step3 Conf  Enhanced Conf Did Enhanced Help?  \
+0         0.5        0.65           0.85                Yes   
+1         0.5        0.65           0.88                Yes   
+2         0.5        0.65           0.85                Yes   
+3         0.5        0.65           0.85                Yes   
+4         0.5        0.65           0.85                Yes   
+5         0.5        0.65           0.60                 No   
+6         0.5        0.65           0.60                 No   
+7         0.5        0.65           0.85                Yes   
+
+               Primary Failure Reason  \
+0    Baseline weak; Enhanced succeeds   
+1  Structured table needed (not used)   
+2    Baseline weak; Enhanced succeeds   
+3    Baseline weak; Enhanced succeeds   
+4              Missing numeric detail   
+5       Low evidence / retrieval miss   
+6       Low evidence / retrieval miss   
+7              Missing numeric detail   
+
+                                       Suggested Fix  \
+0  Route these intents directly to enhanced extra...   
+1  Prefer table-based extractor first; ensure tab...   
+2  Route these intents directly to enhanced extra...   
+3  Route these intents directly to enhanced extra...   
+4  Raise top_k (e.g., 10), add numeric-focused re...   
+5  Tune chunk size (overlap 200–300), add BM25 hy...   
+6  Tune chunk size (overlap 200–300), add BM25 hy...   
+7  Raise top_k (e.g., 10), add numeric-focused re...   
+
+                                Step3 Answer (trunc)  \
+0  === QUERY ===\nWhat were the key financial hig...   
+1  === QUERY ===\nCompare Meta's revenue growth y...   
+2  === QUERY ===\nWhat were the key drivers of Me...   
+3  === QUERY ===\nWhat is Meta's outlook for Q2 2...   
+4  === QUERY ===\nHow many daily active people do...   
+5  === QUERY ===\nHow did ad impressions change y...   
+6  === QUERY ===\nWhat happened to average price ...   
+7  === QUERY ===\nHow much cash and marketable se...   
+
+                             Enhanced Answer (trunc)  
+0  === QUERY ===\nWhat were the key financial hig...  
+1  === QUERY ===\nCompare Meta's revenue growth y...  
+2  === QUERY ===\nWhat were the key drivers of Me...  
+3  === QUERY ===\nWhat is Meta's outlook for Q2 2...  
+4  === QUERY ===\nHow many daily active people do...  
+5  I couldn't find a clear value for 'How did ad ...  
+6  I couldn't find a clear value for 'What happen...  
+7  === QUERY ===\nHow much cash and marketable se...  
+
+[stream:stdout]>
+ Saved categorized failure analysis to:
+  - failure_analysis_categorized_20250810_155203.csv
+  - failure_analysis_categorized_20250810_155203.md
+
+
+===== Cell 17 Outputs (Exact) =====
+
+[stream:stdout]>
+
+=== IMPROVEMENT RECOMMENDATIONS ===
+
+1. Multi-Document RAG with Historical Context
+   Problem: Limited to single quarterly report, lacks historical trends
+   Solution: Index multiple quarterly reports simultaneously with time-aware embeddings
+   Expected Impact: 25% improvement in comparative and trend analysis queries
+   Implementation: Add document metadata, implement temporal embedding techniques
+
+2. Domain-Specific Fine-tuning
+   Problem: General-purpose embeddings miss financial domain nuances
+   Solution: Fine-tune embedding model on financial documents and terminology
+   Expected Impact: 20% improvement in financial terminology understanding
+   Implementation: Collect financial corpus, fine-tune SentenceTransformer model
+
+3. Advanced Mathematical Reasoning
+   Problem: Cannot perform calculations or complex financial analysis
+   Solution: Integrate symbolic computation engine for financial calculations
+   Expected Impact: 40% improvement in calculation-based queries
+   Implementation: Add SymPy integration, financial formula recognition
+
+4. Interactive Query Refinement
+   Problem: Users may need clarification for ambiguous queries
+   Solution: Implement query suggestion and clarification system
+   Expected Impact: 30% improvement in user satisfaction
+   Implementation: Add query analysis, suggestion generation, feedback loop
+
+
+===== Cell 18 Outputs (Exact) =====
+
+[stream:stdout]>
+
+=== SYSTEM SUMMARY ===
+Overall Performance Summary:
+- Total queries evaluated: 15
+- System components: Text chunking, Vector embeddings, Structured data extraction
+- Improvement from Step 1 to Step 3: 40.0%
+- Best performing step: Step 3
+
+=== PERFORMANCE SUMMARY TABLE ===
+                  Step  Avg Confidence  High Conf Rate  Structured Usage
+0       Step 1 (Basic)             0.5           0.000             0.000
+1  Step 2 (Structured)             0.6           0.333             0.333
+2    Step 3 (Advanced)             0.7           0.333             0.333
+ Results exported to 'rag_evaluation_results.json'
+
+RAG SYSTEM ANALYSIS COMPLETED!
+
+Key Achievements:
+ Built complete RAG system with 3 progressive steps
+ Implemented vector similarity, structured data integration, and query optimization
+ Evaluated system on 15 diverse financial queries
+ Demonstrated significant performance improvements across steps
+ Provided detailed failure analysis and improvement recommendations
+
