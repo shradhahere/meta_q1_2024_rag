@@ -1,0 +1,11 @@
+pandas
+numpy
+pdfplumber
+pymupdf
+faiss-cpu
+sentence-transformers
+scikit-learn
+camelot-py
+tabula-py
+matplotlib
+seaborn
