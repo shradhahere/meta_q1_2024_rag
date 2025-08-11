@@ -18,12 +18,19 @@ The workflow follows the assignment guidelines provided in `instructions.docx`.
 ##  Project Structure
 meta_q1_2024_rag/
 │── meta_q1_2024_rag_analysis.ipynb # Main notebook (all steps)
+
 │── Meta’s Q1 2024 Financial Report.pdf # Financial data source
+
 │── instructions.docx # Assignment brief
+
 │── outputs/ # Sample query results
+
 │── requirements.txt
+
 │── README.md
+
 │── .gitignore
+
 
 ---
 
