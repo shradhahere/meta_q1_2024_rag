@@ -116,8 +116,11 @@ jupyter notebook meta_q1_2024_rag_analysis.ipynb
  Evaluation Summary
  
 Step	Avg. Precision@3	Avg. Recall@3	Factual Accuracy
+
 1	0.67	0.72	75%
+
 2	0.73	0.80	88%
+
 3	0.82	0.87	92%
 
  References
